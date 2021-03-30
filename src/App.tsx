@@ -6,7 +6,7 @@ function App() {
       {/* fragment, tag que não tem conteudo e não tem estilo */}
       <Global />
 
-     
+      <Home />
     </>
   );
 }
