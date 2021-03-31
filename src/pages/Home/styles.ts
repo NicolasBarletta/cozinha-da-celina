@@ -15,6 +15,18 @@ export const Container = styled.div`
         font-family: nunito, sans;
       }
       & > .click-here {
+        @keyframes down {
+          0% {
+            transform: translateY(0%);
+            opacity: 1;
+          }
+          100% {
+            transform: translateY(10%);
+            opacity: 0;
+          }
+        }
+
+        position: relative;
         font-family: nunito, sans;
         font-size: 19px;
         padding-top: 8.5rem;
@@ -22,6 +34,15 @@ export const Container = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
+        & > img {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transform: translateY(50%);
+          &:hover {
+            animation: down 0.2s loop;
+          }
+        }
       }
     }
     & > img {
@@ -29,6 +50,10 @@ export const Container = styled.div`
       width: 70rem;
       height: 39rem;
       padding-bottom: 90px;
+      -webkit-user-select: none;
+      -webkit-user-drag: none;
+      -webkit-app-region: no-drag;
+      cursor: default;
     }
   }
 `;

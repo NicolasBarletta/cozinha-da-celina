@@ -1,13 +1,13 @@
+import { BrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
+import Routes from "./router";
 import { Global } from "./styles/global";
 function App() {
   return (
-    <>
-      {/* fragment, tag que não tem conteudo e não tem estilo */}
+    <BrowserRouter>
       <Global />
-
-      <Home />
-    </>
+      <Routes />
+    </BrowserRouter>
   );
 }
 

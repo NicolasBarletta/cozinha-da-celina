@@ -5,4 +5,5 @@ export const Global = createGlobalStyle`
     box-sizing: border-box;
     padding: 0;
 }
+
 `;
