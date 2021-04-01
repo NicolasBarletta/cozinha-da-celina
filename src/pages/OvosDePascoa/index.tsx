@@ -24,7 +24,7 @@ export default function Ovo() {
               <button>
                 <div className="botao">
                   <img src="/whatsapp-symbol.svg"></img>
-                  Clique aqui pra garantir o seu!
+                  &nbsp;&nbsp;Clique aqui pra garantir o seu!
                 </div>
               </button>
             </div>
@@ -45,7 +45,7 @@ export default function Ovo() {
               <button>
                 <div className="botao">
                   <img src="/whatsapp-symbol.svg"></img>
-                  Clique aqui pra garantir o seu!
+                  &nbsp;&nbsp;Clique aqui pra garantir o seu!
                 </div>
               </button>
             </div>
@@ -74,7 +74,7 @@ export default function Ovo() {
               <button>
                 <div className="botao">
                   <img src="/whatsapp-symbol.svg"></img>
-                  Clique aqui pra garantir o seu!
+                  &nbsp;&nbsp;Clique aqui pra garantir o seu!
                 </div>
               </button>
             </div>

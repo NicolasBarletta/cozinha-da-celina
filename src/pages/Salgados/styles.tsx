@@ -1,13 +1,11 @@
 import styled from "styled-components";
 export const Container = styled.div`
-  * {
-    font-family: Nunito, sans-serif;
-  }
-  & > .all-cards {
+  & > .all-cards,
+  & > .all-cards2 {
     display: flex;
     flex-direction: row;
     & > .card {
-      padding-top: 19rem;
+      padding-top: 10rem;
       padding-left: 10rem;
       font-family: Nunito, sans-serif;
       & > .img-card {
@@ -71,21 +69,6 @@ export const Container = styled.div`
           & > .sabores {
             font-size: 16px;
           }
-        }
-        & > p {
-          padding-top: 10px;
-
-          font-family: Nunito, sans-serif;
-          font-weight: normal;
-        }
-        & > img {
-          width: 100px;
-          height: 200px;
-          padding-left: 30px;
-          -webkit-user-select: none;
-          -webkit-user-drag: none;
-          -webkit-app-region: no-drag;
-          cursor: default;
         }
       }
     }

@@ -8,7 +8,7 @@ export default function Header() {
 
         <a href="/OvosDePascoa">Ovos de Páscoa</a>
 
-        <a href="">Salgados</a>
+        <a href="/Salgados">Salgados</a>
         <a href="">Doces</a>
         <a href="">Dúvidas Frequentes</a>
       </div>

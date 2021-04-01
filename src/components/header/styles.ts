@@ -7,15 +7,17 @@ export const Container = styled.header`
   right: 0;
   z-index: 10;
   height: 4rem;
-
+  background-color: #fff;
   & > .header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 20px 0px 0px 12rem;
+    padding: 20px 0px 10px 12rem;
+    background-color: #fff;
     & > img {
       height: 7rem;
       width: 7rem;
+
       object-fit: cover;
       -webkit-user-select: none;
       -webkit-user-drag: none;
