@@ -1,6 +1,7 @@
 import styled from "styled-components";
 export const Container = styled.header`
-  width: 100vw;
+  width: 100%;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -21,8 +22,9 @@ export const Container = styled.header`
     background-color: #fff;
 
     & > img {
-      height: 7rem;
-      width: 7rem;
+      height: 10rem;
+      width: 10rem;
+      margin-left: 5rem;
 
       object-fit: cover;
       -webkit-user-select: none;

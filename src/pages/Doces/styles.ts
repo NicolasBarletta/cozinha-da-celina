@@ -6,7 +6,7 @@ export const Container = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 6rem;
-    @media (max-width: 1100px) {
+    @media (max-width: 920px) {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
