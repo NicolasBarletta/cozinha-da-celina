@@ -1,18 +1,54 @@
 import styled from "styled-components";
 export const Container = styled.div`
-  margin-top: 18rem;
-  padding-left: 12rem;
-
+  height: 100vh;
   & > .home-page {
     display: flex;
     flex-direction: row;
-
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10rem;
+    @media (max-width: 1000px) {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 0;
+      margin-top: 10rem;
+      & > img {
+        margin: 0;
+        width: 100%;
+        padding: none;
+      }
+      & > .content-h2 {
+        width: 100vw;
+        margin-top: 3rem;
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        & > h2 {
+          font-size: 3.5rem;
+          width: 100% !important;
+          text-align: center;
+        }
+        & > .click-here {
+          width: 50%;
+          height: 3rem;
+          display: flex;
+          align-items: center;
+          margin-top: 1.5rem;
+          & > img {
+            margin: 0;
+          }
+        }
+      }
+    }
     & > .content-h2 {
-      width: 25rem;
-
       & > h2 {
         font-size: 55px;
         font-family: nunito, sans;
+        color: #333;
+        width: 30rem;
       }
       & > .click-here {
         @keyframes down {
@@ -26,16 +62,13 @@ export const Container = styled.div`
           }
         }
 
-        position: relative;
-        font-family: nunito, sans;
+        font-family: "Nunito", sans-serif;
         font-size: 19px;
-        padding-top: 8.5rem;
-        padding-left: 30px;
+
         display: flex;
         flex-direction: column;
         align-items: center;
         & > img {
-          position: absolute;
           bottom: 0;
           left: 0;
           transform: translateY(50%);
@@ -46,10 +79,9 @@ export const Container = styled.div`
       }
     }
     & > img {
-      padding-left: 35rem;
-      width: 70rem;
-      height: 39rem;
-      padding-bottom: 90px;
+      width: 35rem;
+
+      object-fit: cover;
       -webkit-user-select: none;
       -webkit-user-drag: none;
       -webkit-app-region: no-drag;

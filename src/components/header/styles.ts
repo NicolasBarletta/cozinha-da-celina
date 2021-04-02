@@ -6,14 +6,20 @@ export const Container = styled.header`
   left: 0;
   right: 0;
   z-index: 10;
-  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   & > .header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 20px 0px 10px 12rem;
+    justify-content: space-between;
+    padding: 0 2rem;
+    padding-right: 6rem;
+    width: 100%;
     background-color: #fff;
+
     & > img {
       height: 7rem;
       width: 7rem;
@@ -24,41 +30,22 @@ export const Container = styled.header`
       -webkit-app-region: no-drag;
       cursor: default;
     }
-    & > img + a {
-      padding-left: 42rem;
-    }
-    & > a + a {
-      padding-left: 30px;
-    }
-    & > a {
+
+    & > nav a {
       text-decoration: none;
       font-weight: bold;
       color: #000;
       font-size: 20px;
       font-family: Nunito, sans-serif;
     }
-    & > a:nth-child(2) {
+    & > nav a:nth-child(1) {
       color: #fd7fe9;
     }
-
-    & > a:nth-child(1):hover {
+    & > nav a + a {
+      margin-left: 1.5rem;
+    }
+    & > nav a:nth-child(1):hover {
       color: #e98bfa;
-    }
-    & > a:nth-child(2):hover {
-      color: #f3bafb;
-      text-decoration: underline;
-    }
-    & > a:nth-child(3):hover {
-      color: #828182;
-      text-decoration: underline;
-    }
-    & > a:nth-child(4):hover {
-      color: #828182;
-      text-decoration: underline;
-    }
-    & > a:nth-child(5):hover {
-      color: #828182;
-      text-decoration: underline;
     }
   }
 `;
